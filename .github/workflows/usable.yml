@@ -68,7 +68,7 @@ jobs:
           path: dist
   deploy:
     needs: build
-    runs-on: ./.github/workflows/reusable.yml
+    uses: ./.github/workflows/reusable.yml
     # steps:
     #   - name: Get build artifacts
     #     uses: actions/download-artifact@v3
